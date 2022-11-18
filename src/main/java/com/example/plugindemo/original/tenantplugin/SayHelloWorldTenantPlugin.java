@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
  * @Description:
  * @Version 1.0.0
  */
-//@Service
+@Service
 public class SayHelloWorldTenantPlugin implements SayHelloWorld {
     @Override
     public String sayHelloWorld() {

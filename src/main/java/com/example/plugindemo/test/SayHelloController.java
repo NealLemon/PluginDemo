@@ -1,4 +1,4 @@
-package com.example.plugindemo.base;
+package com.example.plugindemo.test;
 
 import com.example.plugindemo.base.sample.SayHelloWorld;
 import org.springframework.web.bind.annotation.GetMapping;
