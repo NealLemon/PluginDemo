@@ -1,6 +1,8 @@
 package com.example.plugindemo.original.defaultplugin;
 
 import com.example.plugindemo.base.sample.SayWorld;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;
+import org.springframework.stereotype.Service;
 
 /**
  * @Auther: Neal
@@ -8,6 +10,9 @@ import com.example.plugindemo.base.sample.SayWorld;
  * @Description:
  * @Version 1.0.0
  */
+
+@ConditionalOnMissingBean(type = {"SayWorld"})
+@Service
 public class SayHelloWorldDefaultPlugin implements SayWorld {
 
     @Override
