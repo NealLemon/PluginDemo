@@ -1,6 +1,6 @@
-package com.example.plugindemo.original.tenantplugin;
+package com.example.plugindemo.original.tenant;
 
-import com.example.plugindemo.base.sample.SayHelloWorld;
+import com.example.plugindemo.base.sample.SayWorld;
 import org.springframework.stereotype.Service;
 
 /**
@@ -10,9 +10,9 @@ import org.springframework.stereotype.Service;
  * @Version 1.0.0
  */
 @Service
-public class SayHelloWorldTenantPlugin implements SayHelloWorld {
+public class SayHelloWorldTenantPlugin implements SayWorld {
     @Override
-    public String sayHelloWorld() {
+    public String sayWorld() {
         return "Tenant Plugin say : Hello World";
     }
 }

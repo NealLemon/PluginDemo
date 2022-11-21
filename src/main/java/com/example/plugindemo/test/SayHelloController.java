@@ -1,6 +1,6 @@
 package com.example.plugindemo.test;
 
-import com.example.plugindemo.base.sample.SayHelloWorld;
+import com.example.plugindemo.base.sample.SayWorld;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -11,20 +11,20 @@ import org.springframework.web.bind.annotation.RestController;
  * @Description:
  * @Version 1.0.0
  */
-@RequestMapping("/test/")
+@RequestMapping("/say/")
 @RestController
 public class SayHelloController {
 
-    private final SayHelloWorld sayHelloWorld;
+    private final SayWorld sayWorld;
 
-    public SayHelloController(SayHelloWorld sayHelloWorld) {
-        this.sayHelloWorld = sayHelloWorld;
+    public SayHelloController(SayWorld sayWorld) {
+        this.sayWorld = sayWorld;
     }
 
 
 
-    @GetMapping("hello")
-    public String sayHello() {
-        return sayHelloWorld.sayHelloWorld();
+    @GetMapping("world")
+    public String sayWorld() {
+        return sayWorld.sayWorld();
     }
 }

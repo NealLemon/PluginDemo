@@ -8,6 +8,6 @@ import com.example.plugindemo.base.ExtensionPlugin;
  * @Description: hello world 插件
  * @Version 1.0.0
  */
-public interface SayHelloWorld extends ExtensionPlugin {
-    String sayHelloWorld();
+public interface SayWorld extends ExtensionPlugin {
+    String sayWorld();
 }

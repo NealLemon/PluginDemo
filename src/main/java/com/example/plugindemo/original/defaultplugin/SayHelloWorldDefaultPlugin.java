@@ -1,6 +1,6 @@
 package com.example.plugindemo.original.defaultplugin;
 
-import com.example.plugindemo.base.sample.SayHelloWorld;
+import com.example.plugindemo.base.sample.SayWorld;
 
 /**
  * @Auther: Neal
@@ -8,10 +8,10 @@ import com.example.plugindemo.base.sample.SayHelloWorld;
  * @Description:
  * @Version 1.0.0
  */
-public class SayHelloWorldDefaultPlugin implements SayHelloWorld {
+public class SayHelloWorldDefaultPlugin implements SayWorld {
 
     @Override
-    public String sayHelloWorld() {
+    public String sayWorld() {
         return "Default Plugin Say : Hello World";
     }
 }
