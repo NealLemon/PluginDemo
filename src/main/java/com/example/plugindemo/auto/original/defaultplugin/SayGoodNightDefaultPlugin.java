@@ -3,9 +3,9 @@ package com.example.plugindemo.auto.original.defaultplugin;
 import com.example.plugindemo.base.sample.SayWorld;
 
 /**
- * @Auther: za-zhushaobin
+ * @Auther: Neal
  * @Date: 2022/11/22 17:18
- * @Description:
+ * @Description: 自动装配默认实现插件
  * @Version 1.0.0
  */
 public class SayGoodNightDefaultPlugin implements SayWorld {

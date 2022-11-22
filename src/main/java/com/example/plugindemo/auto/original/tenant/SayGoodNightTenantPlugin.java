@@ -4,9 +4,9 @@ import com.example.plugindemo.base.sample.SayWorld;
 import org.springframework.stereotype.Service;
 
 /**
- * @Auther: za-zhushaobin
+ * @Auther: Neak
  * @Date: 2022/11/22 17:20
- * @Description:
+ * @Description: 租户插件实现
  * @Version 1.0.0
  */
 @Service
