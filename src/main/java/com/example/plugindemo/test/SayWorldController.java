@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RequestMapping("/say/")
 @RestController
-public class SayHelloController {
+public class SayWorldController {
 
     private final SayWorld sayWorld;
 
-    public SayHelloController(SayWorld sayWorld) {
+    public SayWorldController(SayWorld sayWorld) {
         this.sayWorld = sayWorld;
     }
 

@@ -1,19 +1,19 @@
-package com.example.plugindemo.conditional.defaultplugin;
+package com.example.plugindemo.conditional.tenant;
 
 import com.example.plugindemo.base.sample.SayWorld;
 import com.example.plugindemo.conditional.PluginCondition;
 import org.springframework.stereotype.Service;
 
 /**
- * @description: 条件装配 默认插件
+ * @description: 条件装配 租户插件
  * @author: Neal
  * @date: 2022/11/21
  **/
-@PluginCondition()
+@PluginCondition(tenant = "China")
 @Service
-public class SayGoodMorningDefaultPlugin implements SayWorld {
+public class SayGoodMorningChinaPlugin implements SayWorld {
     @Override
     public String sayWorld() {
-        return "India Plugin: Good Morning";
+        return "China Plugin: Good Morning";
     }
 }

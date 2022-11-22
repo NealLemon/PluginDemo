@@ -9,11 +9,11 @@ import org.springframework.stereotype.Service;
  * @author: Neal
  * @date: 2022/11/21
  **/
-@PluginCondition(tenant = "china")
+@PluginCondition(tenant = "India")
 @Service
-public class SayGoodMorningTenantPlugin implements SayWorld {
+public class SayGoodMorningIndiaPlugin implements SayWorld {
     @Override
     public String sayWorld() {
-        return "Tenant: Good Morning";
+        return "India Plugin: Good Morning";
     }
 }

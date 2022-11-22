@@ -1,5 +1,6 @@
-package com.example.plugindemo.original.defaultplugin;
+package com.example.plugindemo.auto.original;
 
+import com.example.plugindemo.auto.original.defaultplugin.SayGoodNightDefaultPlugin;
 import com.example.plugindemo.base.ExtensionPlugin;
 import com.example.plugindemo.base.sample.SayWorld;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnClass;
@@ -17,7 +18,7 @@ public class DefaultPluginAutoConfiguration {
 
     @ConditionalOnMissingBean
     @Bean
-    public SayWorld sayHelloWorldDefaultPlugin() {
-        return new SayHelloWorldDefaultPlugin();
+    public SayWorld sayWorldDefaultPlugin() {
+        return new SayGoodNightDefaultPlugin();
     }
 }
