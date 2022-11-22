@@ -14,6 +14,6 @@ import org.springframework.stereotype.Service;
 public class SayGoodMorningDefaultPlugin implements SayWorld {
     @Override
     public String sayWorld() {
-        return "India Plugin: Good Morning";
+        return "Default Plugin: Good Morning";
     }
 }
