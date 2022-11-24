@@ -1,6 +1,6 @@
 package com.example.plugindemo.conditional.tenant;
 
-import com.example.plugindemo.base.sample.SayWorld;
+import com.example.plugindemo.base.SayWorld;
 import com.example.plugindemo.conditional.PluginCondition;
 import org.springframework.stereotype.Service;
 
@@ -9,11 +9,12 @@ import org.springframework.stereotype.Service;
  * @author: Neal
  * @date: 2022/11/21
  **/
-@PluginCondition(tenant = "China")
+//自定义条件装配注解 租户code 为 India
+@PluginCondition(tenant = "India")
 @Service
-public class SayGoodMorningChinaPlugin implements SayWorld {
+public class SayHelloWorldIndiaPlugin implements SayWorld {
     @Override
     public String sayWorld() {
-        return "China Plugin: Good Morning";
+        return "India Plugin: Say Hello World";
     }
 }
