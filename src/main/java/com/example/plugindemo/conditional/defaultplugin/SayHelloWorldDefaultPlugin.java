@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
  * @date: 2022/11/21
  **/
 //判断是否有该 插件类别的Bean 已经注册在容器中,如果没有 则注册 即注册默认的插件
-@ConditionalOnMissingBean(type = {"com.example.plugindemo.base.SayWorld"})
+@ConditionalOnMissingBean(value = {SayWorld.class},ignored = {SayHelloWorldDefaultPlugin.class})
 @Service
 public class SayHelloWorldDefaultPlugin implements SayWorld {
     @Override
